@@ -6,7 +6,7 @@
   (turn-on-auto-fill))
 
 ; Actually kill the buffer
-(substitute-key-definition 'kill-buffer 'kill-buffer-and-window global-map)
+(substitute-key-definition 'kill-buffer 'kill-buffer-and-its-windows global-map)
 
 ; Jedi mode config
 (add-hook 'python-mode-hook '(jedi:setup my-auto-fill-mode) t)
